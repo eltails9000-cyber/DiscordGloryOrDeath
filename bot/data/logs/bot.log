@@ -1,1 +1,374 @@
+2026-07-17 17:17:39 | WARNING  | discord.utils             | PyNaCl, davey are not installed, voice will NOT be supported
+2026-07-17 17:17:39 | INFO     | bot.database              | Database initialised at bot/data/database.db
+2026-07-17 17:17:39 | INFO     | bot.security              | Loaded 36748 scam domains
+2026-07-17 17:17:39 | INFO     | bot.main                  | Loaded cog: cogs.events
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.moderation
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.security
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.verification
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.giveaways
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.announcements
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.ai
+2026-07-17 17:17:40 | ERROR    | bot.main                  | Failed to load cog cogs.owner: Extension 'cogs.owner' raised an error: TypeError: Commands or listeners must not start with cog_ or bot_ (in method <class 'cogs.owner.OwnerCog'>.bot_status)
+2026-07-17 17:17:40 | INFO     | bot.main                  | Loaded cog: cogs.config_cog
+2026-07-17 17:17:40 | INFO     | bot.main                  | Starting bot…
+2026-07-17 17:17:42 | INFO     | bot.main                  | Logged in as Glory Bot#9235 (ID: 1527716114010738768)
+2026-07-17 17:17:42 | INFO     | bot.main                  | Serving 0 guild(s)
+2026-07-17 17:17:42 | ERROR    | bot.main                  | Unhandled exception in event on_ready
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/discord/client.py", line 465, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/runner/workspace/bot/cogs/giveaways.py", line 33, in on_ready
+    await restore_giveaways(self.bot)
+  File "/home/runner/workspace/bot/services/giveaway_service.py", line 180, in restore_giveaways
+    async with await get_db() as db:
+               ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 181, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 177, in __await__
+    self._thread.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/threading.py", line 970, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2026-07-17 17:17:42 | ERROR    | bot.main                  | Unhandled exception in event on_ready
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/discord/client.py", line 465, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/runner/workspace/bot/cogs/announcements.py", line 31, in on_ready
+    await restore_announcements(self.bot)
+  File "/home/runner/workspace/bot/services/announcement_service.py", line 69, in restore_announcements
+    rows = await fetchall(
+           ^^^^^^^^^^^^^^^
+        "SELECT * FROM scheduled_announcements WHERE sent = 0",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/runner/workspace/bot/services/database_service.py", line 24, in fetchall
+    async with await get_db() as db:
+               ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 181, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 177, in __await__
+    self._thread.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/threading.py", line 970, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2026-07-17 17:17:56 | WARNING  | discord.utils             | PyNaCl, davey are not installed, voice will NOT be supported
+2026-07-17 17:17:56 | INFO     | bot.database              | Database initialised at bot/data/database.db
+2026-07-17 17:17:56 | INFO     | bot.security              | Loaded 36748 scam domains
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.events
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.moderation
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.security
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.verification
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.giveaways
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.announcements
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.ai
+2026-07-17 17:17:56 | ERROR    | bot.main                  | Failed to load cog cogs.owner: Extension 'cogs.owner' raised an error: AttributeError: 'Bot' object has no attribute 'remove_command'
+2026-07-17 17:17:56 | INFO     | bot.main                  | Loaded cog: cogs.config_cog
+2026-07-17 17:17:56 | INFO     | bot.main                  | Starting bot…
+2026-07-17 17:17:59 | INFO     | bot.main                  | Logged in as Glory Bot#9235 (ID: 1527716114010738768)
+2026-07-17 17:17:59 | INFO     | bot.main                  | Serving 0 guild(s)
+2026-07-17 17:17:59 | ERROR    | bot.main                  | Unhandled exception in event on_ready
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/discord/client.py", line 465, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/runner/workspace/bot/cogs/giveaways.py", line 33, in on_ready
+    await restore_giveaways(self.bot)
+  File "/home/runner/workspace/bot/services/giveaway_service.py", line 180, in restore_giveaways
+    async with await get_db() as db:
+               ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 181, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 177, in __await__
+    self._thread.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/threading.py", line 970, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2026-07-17 17:17:59 | ERROR    | bot.main                  | Unhandled exception in event on_ready
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/discord/client.py", line 465, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/runner/workspace/bot/cogs/announcements.py", line 31, in on_ready
+    await restore_announcements(self.bot)
+  File "/home/runner/workspace/bot/services/announcement_service.py", line 69, in restore_announcements
+    rows = await fetchall(
+           ^^^^^^^^^^^^^^^
+        "SELECT * FROM scheduled_announcements WHERE sent = 0",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/runner/workspace/bot/services/database_service.py", line 24, in fetchall
+    async with await get_db() as db:
+               ^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 181, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.13/site-packages/aiosqlite/core.py", line 177, in __await__
+    self._thread.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/threading.py", line 970, in start
+    raise RuntimeError("threads can only be started once")
+RuntimeError: threads can only be started once
+2026-07-17 17:18:46 | WARNING  | discord.gateway           | Can't keep up, shard ID None websocket is 49.6s behind.
+2026-07-17 17:18:48 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:18:58 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:08 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 30 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:18 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 40 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:28 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 50 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:36 | WARNING  | discord.gateway           | Can't keep up, shard ID None websocket is 99.2s behind.
+2026-07-17 17:19:38 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 60 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:48 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 70 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:58 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 80 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:19:59 | WARNING  | discord.utils             | PyNaCl, davey are not installed, voice will NOT be supported
+2026-07-17 17:19:59 | INFO     | bot.database              | Database initialised at bot/data/database.db
+2026-07-17 17:19:59 | INFO     | bot.security              | Loaded 36748 scam domains
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.events
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.moderation
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.security
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.verification
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.giveaways
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.announcements
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.ai
+2026-07-17 17:19:59 | ERROR    | bot.main                  | Failed to load cog cogs.owner: Extension 'cogs.owner' raised an error: NameError: name 'commands' is not defined
+2026-07-17 17:19:59 | INFO     | bot.main                  | Loaded cog: cogs.config_cog
+2026-07-17 17:19:59 | INFO     | bot.main                  | Starting bot…
+2026-07-17 17:20:02 | INFO     | bot.main                  | Logged in as Glory Bot#9235 (ID: 1527716114010738768)
+2026-07-17 17:20:02 | INFO     | bot.main                  | Serving 0 guild(s)
+2026-07-17 17:20:02 | INFO     | bot.announcements         | Restored 0 scheduled announcements
+2026-07-17 17:20:02 | INFO     | bot.giveaways             | Restored 0 active giveaways
+2026-07-17 17:20:17 | WARNING  | discord.utils             | PyNaCl, davey are not installed, voice will NOT be supported
+2026-07-17 17:20:17 | INFO     | bot.database              | Database initialised at bot/data/database.db
+2026-07-17 17:20:17 | INFO     | bot.security              | Loaded 36748 scam domains
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.events
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.moderation
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.security
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.verification
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.giveaways
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.announcements
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.ai
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.owner
+2026-07-17 17:20:17 | INFO     | bot.main                  | Loaded cog: cogs.config_cog
+2026-07-17 17:20:17 | INFO     | bot.main                  | Starting bot…
+2026-07-17 17:20:19 | INFO     | bot.main                  | Logged in as Glory Bot#9235 (ID: 1527716114010738768)
+2026-07-17 17:20:19 | INFO     | bot.main                  | Serving 0 guild(s)
+2026-07-17 17:20:19 | INFO     | bot.giveaways             | Restored 0 active giveaways
+2026-07-17 17:20:19 | INFO     | bot.announcements         | Restored 0 scheduled announcements
+2026-07-17 17:21:07 | WARNING  | discord.gateway           | Can't keep up, shard ID None websocket is 49.6s behind.
+2026-07-17 17:21:08 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:21:18 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:21:28 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 30 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:21:38 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 40 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+
+2026-07-17 17:21:48 | WARNING  | discord.gateway           | Shard ID None heartbeat blocked for more than 50 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/runner/workspace/bot/main.py", line 128, in <module>
+    asyncio.run(main())
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/asyncio/base_events.py", line 2012, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/selectors.py", line 452, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
 
