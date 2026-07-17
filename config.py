@@ -132,7 +132,7 @@ AI_COOLDOWN_SECONDS: int = _env_int("AI_COOLDOWN_SECONDS", 10)
 
 # ─── Roblox API ──────────────────────────────────────────────────────────────
 
-ROBLOX_API_URL: str = _env("ROBLOX_API_URL")
+ROBLOX_API_URL: str = _env("API_URL")
 ROBLOX_API_KEY: str = _env("ROBLOX_API_KEY")
 
 # ─── Announcements ────────────────────────────────────────────────────────────
